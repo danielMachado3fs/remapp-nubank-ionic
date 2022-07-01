@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <div id="buttons">
+      <ion-button size="small" shape="round">
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-button>
+      <div id="more_options">
+        <ion-button color="light" fill="clear" size="small">
+          <ion-icon name="eye-outline"></ion-icon>
+        </ion-button>
+        <ion-button color="light" fill="clear" size="small">
+          <ion-icon name="help-circle-outline"></ion-icon>
+        </ion-button>
+        <ion-button color="light" fill="clear" size="small">
+          <ion-icon name="person-add-outline"></ion-icon>
+        </ion-button>
+      </div>
+    </div>
+    <div id="hello_user">
+      <span>Olá Daniel</span>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="blocks">
+    <ion-item lines="none">
+      <ion-label class="titles">
+        Conta
+      </ion-label>
+      <ion-icon name="chevron-forward-outline" size="small" slot="end"></ion-icon>
+    </ion-item>
+    <div class="values">
+      <ion-label class="values">R$365,25</ion-label>
+    </div>
+  </div>
+
+  <div>
+    <ion-slides [options]="slidesOptions">
+      <ion-slide *ngFor="let option of options">
+        <div class="container">
+          <div class="icon-option">
+            <ion-icon [name]="option.icon"></ion-icon>
+          </div>
+          <ion-label>{{option.text}}</ion-label>
+        </div>
+      </ion-slide>
+    </ion-slides>
+  </div>
+
+  <ion-card type="button">
+    <ion-icon name="journal-outline" size="small"></ion-icon>
+    <ion-label class="bold-label">Meus Cartões</ion-label>
+  </ion-card>
+  <div>
+    <ion-slides [options]="slidesPromo" id="promos">
+      <ion-slide *ngFor="let promo of promos">
+        <ion-card class="ion-text-left">
+          <ion-text>
+            {{promo.text}}
+          </ion-text>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </div>
+
+</ion-content>

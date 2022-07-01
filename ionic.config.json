@@ -1,0 +1,7 @@
+{
+  "name": "remapp-nubank",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
