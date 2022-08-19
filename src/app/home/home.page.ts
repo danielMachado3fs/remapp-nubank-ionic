@@ -8,10 +8,10 @@ import { Component } from '@angular/core';
 export class HomePage {
   public options: Array<any> = [
     { icon: 'barcode-outline', text: 'Pagar' },
-    { icon: 'cash-outline', text: 'Pagar' },
-    { icon: 'phone-portrait-outline', text: 'Pagar' },
-    { icon: 'wallet-outline', text: 'Pagar' },
-    { icon: 'globe-outline', text: 'Pagar' },
+    { icon: 'wallet-outline', text: 'Pegar emprestado' },
+    { icon: 'cash-outline', text: 'Depositar' },
+    { icon: 'globe-outline', text: 'Transferir' },
+    { icon: 'phone-portrait-outline', text: 'Recarga telefone' },
     { icon: 'heart-outline', text: 'Pagar' },
     { icon: 'send-outline', text: 'Pagar' },
   ];
